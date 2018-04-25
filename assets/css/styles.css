@@ -1,0 +1,60 @@
+.icon_search{
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+div.col-lg-2.col-md-2.col-sm-2.col-xs-2.Column_Search{
+  background-color:#aaaaaa;
+  height:25px;
+  display:table;
+  text-align:center;
+}
+
+.Column_SP{
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family:Arial;
+  font-weight:500;
+  line-height:1.1;
+  color:inherit;
+}
+
+h1{
+  margin:.67em 0;
+  font-size:16px;
+}
+
+h1{
+  border:2px solid #9d020c;
+  border-radius:10px 10px 0px 0px;
+  background-color:#9d020c;
+  color:#ffffff;
+  font-size:20px;
+  padding:10px;
+}
+
+div.thongTinSP{
+  text-align:center;
+}
+
+input.inputSearch{
+  border:2px solid rgb(207,206,206);
+  border-radius:12px;
+  width:128%;
+}
+
+.Column_Search{
+  border:2px solid rgb(207,206,206);
+  border-radius:12px;
+}
+
+h1.h1LoaiRuou{
+  color:#ffffff;
+  border-radius:10px 10px 0px 0px;
+}
+
+.khoangcach{
+}
+
