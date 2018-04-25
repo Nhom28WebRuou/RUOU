@@ -17,7 +17,6 @@ div.col-lg-2.col-md-2.col-sm-2.col-xs-2.Column_Search{
 h1{
   border:2px solid #ff3100;
   border-radius:10px 10px 0px 0px;
-  background-color:#ff3100;
   color:#ffffff;
   font-size:20px;
   padding:10px;
@@ -69,5 +68,20 @@ div.row.dssanpham{
 
 .dinhdang{
   height:100%;
+}
+
+div.col-md-8.col-md-offset-2.background{
+  background-color:#ff3100;
+}
+
+div.col-md-8.background{
+  background-color:#ff3100;
+}
+
+form.form-horizontal.custom-form.color{
+}
+
+div.row.register-form.color{
+  background-color:#ff3100;
 }
 
