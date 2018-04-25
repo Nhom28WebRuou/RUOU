@@ -17,14 +17,15 @@ div.col-lg-2.col-md-2.col-sm-2.col-xs-2.Column_Search{
 h1{
   border:2px solid #ff3100;
   border-radius:10px 10px 0px 0px;
+  background-color:#ff3100;
   color:#ffffff;
   font-size:20px;
   padding:10px;
 }
 
 .thongTinSP{
-  text-align:center;
-  color:#56d71a;
+  text-align:left;
+  color:#333;
 }
 
 input.inputSearch{
@@ -70,18 +71,20 @@ div.row.dssanpham{
   height:100%;
 }
 
-div.col-md-8.col-md-offset-2.background{
-  background-color:#ff3100;
+.classSoLuong{
 }
 
-div.col-md-8.background{
-  background-color:#ff3100;
+.soLuongSP{
+  <input type="tel" class="form-control quantity-r2 quantity js-quantity-product" min="0" data-js-qty="" value="1" style="display:block;
 }
 
-form.form-horizontal.custom-form.color{
+.buttonDatHang{
+  width:100%;
+  background-color:#1f950c;
+  color:#ffffff;
 }
 
-div.row.register-form.color{
-  background-color:#ff3100;
+.ThanhToan{
+  margin-top:10px;
 }
 
