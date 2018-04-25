@@ -14,29 +14,18 @@ div.col-lg-2.col-md-2.col-sm-2.col-xs-2.Column_Search{
 .Column_SP{
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-  font-family:Arial;
-  font-weight:500;
-  line-height:1.1;
-  color:inherit;
-}
-
 h1{
-  margin:.67em 0;
-  font-size:16px;
-}
-
-h1{
-  border:2px solid #9d020c;
+  border:2px solid #ff3100;
   border-radius:10px 10px 0px 0px;
-  background-color:#9d020c;
+  background-color:#ff3100;
   color:#ffffff;
   font-size:20px;
   padding:10px;
 }
 
-div.thongTinSP{
+.thongTinSP{
   text-align:center;
+  color:#56d71a;
 }
 
 input.inputSearch{
@@ -55,6 +44,26 @@ h1.h1LoaiRuou{
   border-radius:10px 10px 0px 0px;
 }
 
-.khoangcach{
+div .sanpham img{
+  width:100%;
+}
+
+body{
+  margin:0;
+}
+
+.sanpham{
+}
+
+.danhSachSanPham{
+  border:2px solid #ff3100;
+  padding:0px;
+  margin:0px;
+  margin-top:-10px;
+  border-top:none;
+}
+
+div.row.dssanpham{
+  border-top:1px dashed #000000;
 }
 
