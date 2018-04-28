@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
     $back_to_login_link = $form_forgot_password.find('.form-bottom-message a'),
     $main_nav = $('.main-nav'),
     $main_dow = $('.dowlogin');
-
+    
       $('.cs1').on('click', function(event) {
      $('.ten').toggleClass('hidden');  
   });
@@ -52,6 +52,13 @@ jQuery(document).ready(function($){
         $('.cancel4').on('click', function(event) {
      $('.gt').toggleClass('hidden');  
   });
+     $('.Column_Search').on('click', function(event) {
+        window.location="timkiem.html"; 
+  });
+    $('.list-group-item span').on('click', function(event) {
+        window.location="timkiem.html"; 
+  });
+    
 
   //open modal
   $main_nav.on('click', function(event){
@@ -139,6 +146,7 @@ jQuery(document).ready(function($){
        $form_modal.removeClass('is-visible'); 
       $main_nav.addClass('hidden');
       $main_dow.removeClass('hidden');
+      $('.mua').removeClass('hidden');
   });
   $form_signup.find('input[type="submit"]').on('click', function(event){
     $form_modal.removeClass('is-visible'); 
