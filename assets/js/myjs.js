@@ -1,5 +1,46 @@
 
 jQuery(document).ready(function($){
+
+	      $('#tang1').on('click', function(event) {
+       var gt=$('#sl1').text();  
+          var so=Number(gt)+1;
+          $('#sl1').text(so);
+              tinhlai();
+  });
+    $('#tang2').on('click', function(event) {
+        var gt=$('#sl2').text();  
+          var so=Number(gt)+1;
+          $('#sl2').text(so);
+        tinhlai();
+  });
+     $('#giam1').on('click', function(event) {
+       var gt=$('#sl1').text();  
+          var so=Number(gt)-1;
+         if(so>0)
+{          $('#sl1').text(so);
+ tinhlai();
+}
+  });
+    $('#giam2').on('click', function(event) {
+       var gt=$('#sl2').text();  
+          var so=Number(gt)-1;
+         if(so>0)
+{          $('#sl2').text(so);
+ tinhlai();
+}
+  });
+    function tinhlai(){
+         var gt1=$('#sl1').text();  
+        var tien1=$('#gt1').text();  
+     var gt2=$('#sl2').text();  
+         var tien2=$('#gt2').text();
+        var thanhtien= Number(gt1)*Number(tien1)+Number(gt2)*Number(tien2);
+        $('.tinhtien').text(thanhtien)
+  }
+    
+    
+var name_array = new Array();
+    name_array.push("1");
   var $form_modal = $('.user-modal'),
     $form_login = $form_modal.find('#login'),
     $form_signup = $form_modal.find('#signup'),
@@ -59,7 +100,12 @@ jQuery(document).ready(function($){
         window.location="timkiem.html"; 
   });
     
-
+$('#form').submit(function(e) {
+    if (grecaptcha.getResponse() == '') {
+        $('.g-recaptcha').css('box-shadow', '-9px 9px 8px -5px #a94442');
+        e.preventDefault();
+    }
+});
   //open modal
   $main_nav.on('click', function(event){
 

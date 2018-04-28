@@ -45,7 +45,7 @@ h1.h1LoaiRuou{
   border-radius:10px 10px 0px 0px;
 }
 
-div .sanpham img{
+.sanpham img{
   width:100%;
 }
 
@@ -110,5 +110,18 @@ button.btn.btn-primary.mybtn{
 
 li.list-group-item:hover{
   color:rgb(255,0,0);
+}
+
+div.sanpham.giohang{
+  width:70px;
+  height:80px;
+}
+
+div.thongTinSP.giohang{
+  padding:19px;
+}
+
+.btn.btn-default.cuahang{
+  padding:4px;
 }
 

@@ -31,21 +31,112 @@
                     <li role="presentation"><a href="#">VANG &amp; CHAMPANE </a></li>
                     <li role="presentation"><a href="#">VODKA </a></li>
                     <li role="presentation"><a href="#">RƯỢU MẠNH</a></li>
-                    <li role="presentation"><a href="#">GIỎ HÀNG</a></li>
+                    <li role="presentation"><a href="giohang.html">GIỎ HÀNG</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right main-nav">
+                    <li role="presentation"><a href="#" class="signin">Sign in</a></li>
+                    <li role="presentation"><a href="#" class="signup"> Sign up</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right dowlogin hidden">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="assets/img/avatar.jpg" class="dropdown-image"></a>
                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                            <li role="presentation"><a href="#">Settings </a></li>
-                            <li role="presentation"><a href="#">Payments </a></li>
-                            <li role="presentation" class="active"><a href="#">Logout </a></li>
+                            <li role="presentation"><a href="profile.html">Profile </a></li>
+                            <li role="presentation"><a href="index.html">Logout </a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="user-modal">
+        <div class="user-modal-container">
+            <ul class="switcher">
+                <li><a href="#0">Sign in</a></li>
+                <li><a href="#0">New account</a></li>
+            </ul>
+            <div id="login">
+                <form class="form">
+                    <p class="fieldset">
+                        <label class="image-replace email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="error-message">An account with this email address does not exist!</span>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                        <span class="error-message">Wrong password! Try again.</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Remember me</label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
+                
+                <p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+                <!-- <a href="#0" class="close-form">Close</a> -->
+            </div>
+
+            <div id="signup">
+                <form class="form">
+                    <p class="fieldset">
+                        <label class="image-replace username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="error-message">Enter a valid email address!</span>
+                    </p>
+                    
+                    <p class="fieldset">
+                        <label class="image-replace password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                        <span class="error-message">Your password has to be at least 6 characters long!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
+                    </p>
+                <div class="g-recaptcha" data-sitekey="6LceGVYUAAAAALxgZ62emjvac0yJJ8rmWIB--vVg"></div>
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                    </p>
+                </form>
+
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+
+            <div id="reset-password">
+                <p class="form-message">Lost your password? Please enter your email address.<br> You will receive a link to create a new password.</p>
+
+                <form class="form">
+                    <p class="fieldset">
+                        <label class="image-replace email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="error-message">An account with this email does not exist!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+
+                <p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+            </div>
+            <a href="#0" class="close-form">Close</a>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs Column_SP">
             <div class="row">
@@ -86,17 +177,83 @@
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                             <div></div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 sanpham"><img src="assets/img/h1.jpg"></div>
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                            <form>
-                                                <div class="thongTinSP"><span>M001 </span>
-                                                    <div></div><span>Red martin</span>
-                                                    <div></div>
-                                                </div>
-                                            </form>
+                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 classSoLuong">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Mã hàng</th>
+                                                            <th>Thông Tin</th>
+                                                            <th>Giá tiền</th>
+                                                            <th>Số lượng</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="sanpham giohang">
+    <img src="assets/img/1.jpg" />
+
+</div>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+    <div class="thongTinSP giohang"><span>M001 </span>
+        <div></div><span>Red martin</span>
+    </div>
+</form>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+    <div class="thongTinSP giohang">
+        <span id="gt1">1700000</span>
+    </div>
+</form>
+                                                            </td>
+                                                            <td>
+                                                                <form class="form-inline" action="/action_page.php">
+    <div class="form-group">
+         <button class="btn btn-default cuahang" type="button" id="giam1">-</button>
+      <label id="sl1">1</label>
+        <button class="btn btn-default cuahang" type="button" id="tang1">+</button>
+  </div>
+</form>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="sanpham giohang">
+    <img src="Ruou-Remy-Martin-VSOP-Hop-Qua-2018-1,3.jpg" />
+</div>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+    <div class="thongTinSP giohang"><span>M005</span>
+        <div></div><span>Red martin</span>
+    </div>
+</form>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+    <div class="thongTinSP giohang">
+        <span id="gt2">2000000</span>
+    </div>
+</form>
+                                                            </td>
+                                                            <td>
+                                                                <form class="form-inline" action="/action_page.php">
+    <button class="btn btn-default cuahang" type="button" id="giam2">-</button>
+      <label id="sl2">2</label>
+    <button class="btn btn-default cuahang" type="button" id="tang2">+</button>
+    <div class="form-group">
+  </div>
+</form>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span>1.700.000đ </span></div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 classSoLuong"></div>
                                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                             <div></div>
                                         </div>
@@ -105,7 +262,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row"></div>
                 </div>
             </div>
         </div>
@@ -118,13 +274,13 @@
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span>Tạm tính</span></div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span>1.700.000đ</span></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span class="tinhtien">1.700.000đ</span></div>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span>Thành tiền</span></div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span>1.700.000đ</span></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5"><span class="tinhtien">1.700.000đ</span></div>
                             </div>
                         </li>
                     </ul>
@@ -133,9 +289,31 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="#">TQT.<span>logo </span></a></h3>
+                <p class="company-name">Company Name © 2018 </p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p> 182, Le Dai Hanh</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> 123456789</p>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the team</h4>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/myjs.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>
