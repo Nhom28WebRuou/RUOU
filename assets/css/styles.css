@@ -93,3 +93,16 @@ div.row.dssanpham{
   font-size:20px;
 }
 
+caption.thongtinprofile{
+  font-size:30px;
+}
+
+.doi input{
+  margin-bottom:10px;
+}
+
+button.btn.btn-primary.mybtn{
+  padding:3px;
+  margin-left:34px;
+}
+

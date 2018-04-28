@@ -12,6 +12,47 @@ jQuery(document).ready(function($){
     $main_nav = $('.main-nav'),
     $main_dow = $('.dowlogin');
 
+      $('.cs1').on('click', function(event) {
+     $('.ten').toggleClass('hidden');  
+  });
+     $('.cs2').on('click', function(event) {
+     $('.mail').toggleClass('hidden');  
+  });
+    $('.cs3').on('click', function(event) {
+     $('.sdt').toggleClass('hidden');  
+  });
+     $('.cs4').on('click', function(event) {
+     $('.gt').toggleClass('hidden');  
+  });
+    $('#btnten').on('click', function(event) {
+       $("#ten").text($('#inputten').val());
+     $('.ten').toggleClass('hidden');  
+  });
+        $('#btnmail').on('click', function(event) {
+       $("#mail").text($('#inputmail').val());
+     $('.mail').toggleClass('hidden');  
+  });
+    $('#btnsdt').on('click', function(event) {
+       $("#sdt").text($('#inputsdt').val());
+     $('.sdt').toggleClass('hidden');  
+  });
+     $('#btngt').on('click', function(event) {
+       $("#gt").text($('[name="goitinh"]:radio:checked').val());
+     $('.gt').toggleClass('hidden');  
+  });
+      $('.cancel1').on('click', function(event) {
+     $('.ten').toggleClass('hidden');  
+  });
+        $('.cancel2').on('click', function(event) {
+     $('.mail').toggleClass('hidden');  
+  });
+        $('.cancel3').on('click', function(event) {
+     $('.sdt').toggleClass('hidden');  
+  });
+        $('.cancel4').on('click', function(event) {
+     $('.gt').toggleClass('hidden');  
+  });
+
   //open modal
   $main_nav.on('click', function(event){
 
